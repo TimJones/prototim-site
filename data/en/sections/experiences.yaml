@@ -1,0 +1,183 @@
+section:
+  name: Job Experience
+  id: work
+  enable: true
+  weight: 3
+  showOnNavbar: true
+  template: sections/experiences.html
+
+experiences:
+  - company:
+      name: Busuu
+      url: https://www.busuu.com
+      location: London, UK & Madrid, Spain
+      overview:
+    positions:
+      - designation: Platform Engineer
+        start: March 2020
+        responsibilities:
+          - Management and maintenance of legacy platform, including mixed Puppet 4 & 5 environments
+          - Migration of platform infrastructure-as-code from Terraform 0.11 to 0.13
+          - Planning and implementation of platform deployment into China
+          - Development and roll-out of a new containerised platform based on Kubernetes
+          - Implemented initial roll-out of improved security service granting on-demand credentials for database access using Hashicorp Vault
+          - Migration of applications to containerised microservices
+  - company:
+      name: Getro (then Monday.VC)
+      url: https://www.getro.com
+      location: Remote
+      overview: 
+    positions:
+      - designation: DevOps Specialist
+        start: May 2019
+        end: March 2020
+        responsibilities:
+          - Management of Heroku application deployments, PostgreSQL database, SSL certificates
+          - Responsible for streamlining continuous testing & integration pipelines
+          - Increase monitoring and observability for the platform
+          - Laid groundwork for migration of monolithic legacy application into microservices
+  - company:
+      name: Spotahome
+      url: https://www.spotahome.com
+      location: Madrid, Spain
+      overview:
+    positions:
+      - designation: DevOps Engineer
+        start: July 2016
+        end: May 2019
+        responsibilities:
+          - Supported local development migration to Docker containers
+          - Migrated monolithic legacy application form AWS EC2 to Kubernetes
+          - Managed database deployments and maintenance of MongoDB & PostgreSQL in Kubernetes, AWS EC2, and RDS
+          - Developed and maintained Kubernetes operators for specialised internal work flows (Python, Golang)
+          - Migrated Continuous Integration and Deployment pipelines from Ansible to Concourse
+  - company:
+      name: BBVA
+      url: https://www.bbva.com
+      location: Madrid, Spain
+      overview:
+    positions:
+      - designation: Systems Architech & DevOps
+        start: August 2015
+        end: June 2016
+        responsibilities:
+          - Streamlining build process of a Java HTTP-REST application
+          - Integration of CI tools (Jenkins/GoCD/SonarQube) into the build process for unit and function testing
+          - Use of Terraform to automatically deploy virtual machines in both public (AWS) and private (OpenStack) cloud infrastructure
+          - Use of Ansible to control virtual machine state, apply patches, etc
+          - Testing of various new tools, platforms, and configurations for integration with the server, build process, or operating environment
+  - company:
+      name: Fon
+      url: https://fon.com
+      location: Madrid, Spain
+      overview:
+    positions:
+      - designation: Software Engineer
+        start: July 2015
+        end: January 2015
+        responsibilities:
+          - Refactor of central RADIUS AAA service in Perl
+          - Improvement and additional feature support for custom RADIUS AAA service
+      - designation: Platform Engineer
+        start: December 2014
+        end: January 2013
+        responsibilities:
+          - Internal tool creation and development using a variety of languages (Perl, Python, Bash, etc)
+          - Automated platform deployment and configuration using Puppet
+          - RADIUS AAA customisation and feature development
+          - Platform design and implementation
+      - designation: Network Services Operations Centre Operator
+        start: June 2012
+        end: January 2013
+        responsibilities:
+          - Monitoring servers and network equipment across several data centres globally
+          - Constant improvement to service and end-user-experience monitoring
+          - Design and implementation of automatic monitoring and health-checking services
+  - company:
+      name: BP
+      url: https://www.bp.com
+      location: London, UK
+      overview:
+    positions:
+      - designation: Virtualised Compatibility Testing Operator
+        start: September 2010
+        end: December 2010
+        responsibilities:
+          - Configuration, deployment, and day-to-day management of a virtualised environment for testing application compatibility
+          - Deployment of 5 physical Windows 2008R2 servers with HyperV to host approx. 250 virtualised Windows 7 desktops to be globally accessible via Citrix XenApp
+          - Prioritising & scheduling availability to testers, and preparing clean environments for the testers
+          - Troubleshooting issues with the environment including connectivity, application compatibility, and general changes of work flow from Windows XP to Windows 7
+      - designation: Application Package Testing Engineer
+        start: January 2010
+        end: September 2010
+        responsibilities:
+          - Part of a globally-reaching project team to asses validity of upgrading all BP workstations from Windows XP to 7
+          - Bulk testing of over 6,000 application packages for compatibility with Windows 7
+          - Designing, procuring, & implementing a clean laboratory environment consisting of a Windows 2008R2 server with MSSQL Server 2008 and 15 Windows 7 workstations
+          - Collecting & analysing application usage data from over 90,000 workstations globally
+          - Prioritising application impact based on usage statistics and compatibility level
+          - Liaising with application owners on the status of their packages
+          - Assisting in devising possible solutions for incompatible applications such as upgrade availability, equivalent functionality in a different application, decommissioning, or sand-boxing
+      - designation: Desktop Refresh Engineer
+        start: May 2008
+        end: December 2009
+        responsibilities:
+          - Working throughout the UK in teams of various sizes, including managing small teams and sites
+          - Individual imaging of new machines, including laptops and desktops
+          - Migration of user data, applications and their configurations from old hardware to new
+          - After-service user support, face-to-face and telephone guidance
+  - company:
+      name: Cryptic Software (Dissolved)
+      url: https://www.cryptic.co.uk
+      location: London, UK
+      overview:
+    positions:
+      - designation: Software Developer
+        start: July 2006
+        end: Feburary 2008
+        responsibilities:
+          - Support and extension of an application and related projects (over 90,000 lines of C++ code with interfaces into Windows platform-specific APIs such as COM, COM+, ATL, and MFC)
+          - Refactoring Windows platform code to include cross-platform capabilities
+          - Meetings with potential clients including product demonstrations, presentations and training clients on installation and configuration of software
+  - company:
+      name: University of Luton (now University of Bedfordshire)
+      url: https://www.beds.ac.uk
+      location: Luton, UK
+      overview:
+    positions:
+      - designation: Student Technical Steward
+        start: September 2004
+        end: July 2006
+        responsibilities:
+          - Assisted with redesign and overhaul of university network (consisting of a 3-stack core with a redundant 40Gbps fibre interconnection, connected to departmental stacks via redundant 10Gbps fibre links)
+          - Installed and configured Cisco networking equipment
+          - Redesigned and rebuilt a networking test laboratory with zero budget
+          - Supported a wide range of applications for the student body
+          - Helped with the projects of students, lecturers, and other members of staff ranging from programming, 3D design, to building robotic demonstration models and hosting departmental open days
+  - company:
+      name: Baker Heath Associates Limited
+      url: http://www.bhasoftware.com
+      location: Leicester, UK
+      overview:
+    positions:
+      - designation: Database Programmer
+        start: May 2002
+        end: September 2003
+        responsibilities:
+          - Design and implementation of bespoke database software, utilising MS Access, MS SQL server, and MySQL as well as Visual Basic and Visual C++.; · Administrative duties for the company's local network that also hosted external websites and database servers
+          - Maintenance tasks, such as adding and editing user accounts on the MS Exchange server
+          - Applying security patches to the MS IIS server and introduced, installed and configured hardware-based firewall
+  - company:
+      name: Manor High School
+      url: http://www.bhasoftware.com
+      location: Leicester, UK
+      overview:
+    positions:
+      - designation: Network Administrator
+        start: August 2001
+        end: May 2002
+        responsibilities:
+          - Administered a network of two NT 4.0 servers, over 100 Windows 95 & 98 PCs and more than 1000 users, both students and staff
+          - Major projects included load-balancing across servers and using Ethernet channel bonding to increase server bandwidth
+          - Oversaw an upgrade from dual ISDN to cable broadband internet access as well as the installation of fibre optics for network communication to remote classrooms
+          - Decommissioning and replacement of the MS IIS web server with a Linux-based web server including FTP access and secure connections for the school to host their own external website and intranet
