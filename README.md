@@ -4,6 +4,7 @@ Static content for Prototim.com site
 ## Tools
 * docker-compsoe - containerise development environment
 * Hugo - for static content generation
+* Toha - Theme pack for Hugo
 
 ## Use
 Run test server locally with live reload
