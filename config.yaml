@@ -1,3 +1,24 @@
-baseURL: http://example.org/
-languageCode: en-us
-title: My New Hugo Site
+baseURL: https://www.prototim.com/
+languageCode: en-gb
+title: Tim Jones - Prototype Geek
+theme: toha
+
+languages:
+  en:
+    languageName: English
+    weight: 1
+
+markup:
+  tableOfContents:
+    startLevel: 2
+    endLevel: 6
+    ordered: false
+
+enableEmoji: true
+
+params:
+  enableBlogPost: true
+  enableTOC: false
+  newsletter:
+    enable: false
+  gitRepo: https://github.com/TimJones/prototim-site
