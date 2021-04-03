@@ -1,0 +1,35 @@
+section:
+  name: About
+  id: about
+  enable: true
+  weight: 1
+  showOnNavbar: true
+
+designation: Platform Engineer
+company:
+  name: Busuu
+  url: https://www.busuu.com
+
+summary: A fan of declarative, immutable work flows and a practitioner of GitOps. An Open Source advocate, user, and contributor to projects such as Zabbix, Ansible, SaltStack, and most currently Kubernetes-specific OS Talos. 15+ years of experience in Information Technology, ranging from applications development to networks and systems administration.
+
+socialLinks:
+  - name: Email
+    icon: fas fa-envelope
+    url: prototim.com@gmail.com
+  - name: GitHub
+    icon: fab fa-github
+    url: https://github.com/TimJones
+  - name: LinkedIn
+    icon: fab fa-linkedin
+    url: https://www.linkedin.com/in/tim-jones-4b822446
+
+softSkills:
+  - name: Hard Working
+    percentage: 85
+    color: green
+  - name: Fast Learner
+    percentage: 85
+    color: sky
+  - name: Problem Solving
+    percentage: 85
+    color: orange
