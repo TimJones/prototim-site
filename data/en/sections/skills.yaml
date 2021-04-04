@@ -1,0 +1,32 @@
+section:
+  name: Skills
+  id: skills
+  enable: true
+  weight: 2
+  showOnNavbar: true
+
+skills:
+  - name: Kubernetes
+    logo: /images/sections/skills/kubernetes.png
+    url: https://kubernetes.io
+    summary: Capable of deploying & managing applications on Kubernetes. Some experience in writing Kubernetes controllers/operators.
+  - name: AWS
+    logo: /images/sections/skills/aws.png
+    url: https://aws.amazon.com
+    summary: Experienced in managing scalable AWS deployments with EC2, ASGs, CloudFront, and RDS.
+  - name: Docker
+    logo: /images/sections/skills/docker.png
+    url: https://www.docker.com
+    summary: Profficient in cache optimisation, multi-stage builds, portable development containers and production micro service containers.
+  - name: Git
+    logo: /images/sections/skills/git.png
+    url: https://git-scm.com
+    summary: Adept at git use in a professional environment, clean commit histories, and use in bug-finding.
+  - name: Python
+    logo: /images/sections/skills/python.png
+    url: https://www.python.org
+    summary: Capable use of both Python 2 & 3 for scripting automation, CLI tooling, and small API services with frameworks such as Flask and FastAPI.
+  - name: Go
+    logo: /images/sections/skills/go.png
+    url: https://golang.org
+    summary: Able to build CLI tools, and API services mostly for Kubernetes with Kubebuilder and Operator SDK.
