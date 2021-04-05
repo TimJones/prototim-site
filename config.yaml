@@ -14,6 +14,11 @@ markup:
     endLevel: 6
     ordered: false
 
+outputs:
+  home:
+    - HTML
+    - JSON
+
 enableEmoji: true
 
 params:
@@ -21,4 +26,11 @@ params:
   enableTOC: false
   newsletter:
     enable: false
+
+  background: /images/site/background.jpg
+  logo:
+    main: /images/site/main-logo.png
+    inverted: /images/site/main-logo.png
+    favicon: /images/site/main-logo.png
+
   gitRepo: https://github.com/TimJones/prototim-site
