@@ -34,3 +34,4 @@ params:
     favicon: /images/site/main-logo.png
 
   gitRepo: https://github.com/TimJones/prototim-site
+  gitBranch: main
