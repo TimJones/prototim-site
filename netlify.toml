@@ -4,3 +4,7 @@
 
 [build.environment]
   HUGO_VERSION = "0.82.0"
+
+[[headers]]
+  [headers.values]
+    X-Clacks-Overhead = "GNU Terry Pratchett"
