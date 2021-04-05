@@ -2,6 +2,7 @@ baseURL: https://www.prototim.com/
 languageCode: en-gb
 title: Tim Jones - Prototype Geek
 theme: toha
+enableEmoji: true
 enableGitInfo: true
 enableRobotsTXT: true
 
@@ -20,8 +21,6 @@ outputs:
   home:
     - HTML
     - JSON
-
-enableEmoji: true
 
 params:
   enableTOC: false
