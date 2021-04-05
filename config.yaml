@@ -22,8 +22,8 @@ outputs:
 enableEmoji: true
 
 params:
-  enableBlogPost: true
   enableTOC: false
+  enableBlogPost: false
   newsletter:
     enable: false
 
