@@ -2,6 +2,8 @@ baseURL: https://www.prototim.com/
 languageCode: en-gb
 title: Tim Jones - Prototype Geek
 theme: toha
+enableGitInfo: true
+enableRobotsTXT: true
 
 languages:
   en:
