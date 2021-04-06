@@ -5,6 +5,7 @@ theme: toha
 enableEmoji: true
 enableGitInfo: true
 enableRobotsTXT: true
+googleAnalytics: G-F3HDB4X21M
 
 languages:
   en:
