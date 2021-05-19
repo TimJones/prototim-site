@@ -8,6 +8,21 @@ section:
 
 experiences:
   - company:
+      name: Stuart
+      url: https://www.stuart.com
+      location: Remote
+      overview:
+    positions:
+      - designation: Senior DevOps Engineer
+        start: May 2021
+        responsibilities:
+          - Maintainance of Terraform infrastructure-as-code including updating to latest tool version and incorporating official modules
+          - Maintain and improve CI/CD tooling workflow, including Ansible, Packer, and Spinnaker
+          - Design and deploy load test environment
+          - Support and consolidate Kubernetes clusters
+          - Implement AWS cost optimization and budgeting
+          - Mentor junior engineers via methods such as tech talks and pair programming
+  - company:
       name: Busuu
       url: https://www.busuu.com
       location: London, UK & Madrid, Spain
@@ -15,6 +30,7 @@ experiences:
     positions:
       - designation: Platform Engineer
         start: March 2020
+        end: April 2021
         responsibilities:
           - Management and maintenance of legacy platform, including mixed Puppet 4 & 5 environments
           - Migration of platform infrastructure-as-code from Terraform 0.11 to 0.13
