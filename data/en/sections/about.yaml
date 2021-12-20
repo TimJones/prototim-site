@@ -5,10 +5,10 @@ section:
   weight: 1
   showOnNavbar: true
 
-designation: Platform Engineer
+designation: Senior DevOps Engineer
 company:
-  name: Busuu
-  url: https://www.busuu.com
+  name: Stuart
+  url: https://stuart.com/
 
 summary: A fan of declarative, immutable work flows and a practitioner of GitOps. An Open Source advocate, user, and contributor to projects such as Zabbix, Ansible, SaltStack, and most currently Kubernetes-specific OS Talos. 15+ years of experience in Information Technology, ranging from applications development to networks and systems administration.
 
