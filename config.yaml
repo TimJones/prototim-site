@@ -24,8 +24,8 @@ outputs:
     - JSON
 
 params:
-  enableTOC: false
-  enableBlogPost: false
+  enableTOC: true
+  enableBlogPost: true
   newsletter:
     enable: false
 
