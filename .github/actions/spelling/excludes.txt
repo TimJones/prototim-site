@@ -15,3 +15,6 @@ ignore$
 \.png$
 \.wav$
 ^\.git
+docker-compose\.ya?ml$
+^netlify.toml$
+^config.yaml$
