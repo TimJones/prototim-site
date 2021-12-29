@@ -14,4 +14,4 @@ ignore$
 \.mp[34]$
 \.png$
 \.wav$
-^\.github/
+^\.git
