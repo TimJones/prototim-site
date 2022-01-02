@@ -2,7 +2,7 @@
 Static content for Prototim.com site
 
 ## Tools
-* docker-compsoe - containerise development environment
+* docker-compose - containerised development environment
 * Hugo - for static content generation
 * Toha - Theme pack for Hugo
 

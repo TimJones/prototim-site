@@ -17,7 +17,7 @@ skills:
   - name: Docker
     logo: /images/sections/skills/docker.png
     url: https://www.docker.com
-    summary: Profficient in cache optimisation, multi-stage builds, portable development containers and production micro service containers.
+    summary: Proficient in cache optimisation, multi-stage builds, portable development containers and production micro service containers.
   - name: Git
     logo: /images/sections/skills/git.png
     url: https://git-scm.com

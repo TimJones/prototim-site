@@ -73,7 +73,7 @@ experiences:
       location: Madrid, Spain
       overview:
     positions:
-      - designation: Systems Architech & DevOps
+      - designation: Systems Architect & DevOps
         start: August 2015
         end: June 2016
         responsibilities:
@@ -150,7 +150,7 @@ experiences:
     positions:
       - designation: Software Developer
         start: July 2006
-        end: Feburary 2008
+        end: February 2008
         responsibilities:
           - Support and extension of an application and related projects (over 90,000 lines of C++ code with interfaces into Windows platform-specific APIs such as COM, COM+, ATL, and MFC)
           - Refactoring Windows platform code to include cross-platform capabilities
