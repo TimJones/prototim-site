@@ -12,9 +12,11 @@ jobs:
       with:
         submodules: true
         fetch-depth: 0
+    - name: merge-env
+      run: cat .env >> ${GITHUB_ENV}
     - name: Setup Hugo
       uses: peaceiris/actions-hugo@v2
       with:
-        hugo-version: '0.91.0'
+        hugo-version: ${{ env.HUGO_VERSION }}
     - name: build
       run: hugo --gc --minify
