@@ -1,7 +1,7 @@
 version: '3'
 services:
   hugo:
-    image: klakegg/hugo:0.91.0-ext-alpine
+    image: klakegg/hugo:${HUGO_VERSION}-ext-alpine
     command: server
     volumes:
       - .:/src
