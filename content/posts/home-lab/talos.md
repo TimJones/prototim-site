@@ -17,13 +17,13 @@ and keep alive, all jerry-rigged into a then-cutting-edge
 [LVM2](https://en.wikipedia.org/wiki/Logical_Volume_Manager_%28Linux%29) file server,
 as much memory as we could afford to host game servers (one at a time or the poor
 thing would overheat), and [IPCop](http://www.ipcop.org/) so we could all share the
-single internet connection we had. It was a frakenstienian beast, but it served me
+single internet connection we had. It was a frankensteinian beast, but it served me
 well and lit the match to the furnace of my career.
 
 {{< img title="12U rack with servers" src="/images/home-rack-front-back.jpg" align="center" >}}
 
 Fast-forward to the present, and I've a very forgiving wife who has accepted that I
-will always have the mistress that is my home lab, now resplendant in her 12U rack,
+will always have the mistress that is my home lab, now resplendent in her 12U rack,
 with 10G networking of Ubiquity, battery back-up and power management by APC, and
 3 XeonD based servers from SuperMicro. Some of which was even bought brand-new, but
 most still coming in second-hand. The time has come to give her a make-over, and
@@ -47,7 +47,7 @@ It brings its own init, so no SystemD/sysvinit/upstart, machined to manage the
 machine itself and replaces NetworkManager/systemd-networkd/netctl and deals with
 local storage too. There is no shell with Talos, so no need for SSH either, instead
 Talos is managed by a robust and secure gRPC API with mutual TLS, managed bu apid
-and trustd respectivly. It runs from a squashfs image so is immutable and ephemeral,
+and trustd respectively. It runs from a squashfs image so is immutable and ephemeral,
 it really is the absolute bare-minimalist distribution required to get a Kubernetes
 platform running in a reliable and secure manner.
 
@@ -69,7 +69,7 @@ in [VirtualBox](https://www.talos.dev/docs/latest/local-platforms/virtualbox/) o
 Since I want to use my physical servers, this guide is going to stick to the bare
 metal methods. The same team that created Talos have also created
 [Sidero Metal](https://www.siderolabs.com/platform/bare-metal-kubernetes-sidero/)
-to manange Talos Kubernetes cluster on bare metal platforms which I'll cover at a
+to manage Talos Kubernetes cluster on bare metal platforms which I'll cover at a
 later date, along with a highly-available control plane and customized network
 configuration. This first cluster will be a simple single control plane node with
 two worker nodes, and the networking will be handled by flannel which comes built-in
@@ -78,7 +78,7 @@ as standard with Talos.
 ### Get Set Up
 
 First things first, I need the `talosctl` tool to manage a Talos cluster, and to
-make it executeable. For a simple boot process to get the cluster up-and-running,
+make it executable. For a simple boot process to get the cluster up-and-running,
 I'm just going to download the ISO and boot directly from that.
 
 {{< note size="small" >}}You might need to download `talosctl` to a different
@@ -121,7 +121,7 @@ $ talosctl --talosconfig talosconfig config endpoint ${TALOS_CONTROL_PLANE}
 
 Now I am ready to boot the servers via the ISO downloaded earlier.
 
-### Bootstapping the Control Plane
+### Bootstrapping the Control Plane
 
 When booting an unconfigured environment, Talos will boot into a minimal 'live'
 system waiting for configuration. This can be provided by having a HTTP endpoint
@@ -138,14 +138,14 @@ configuration, which should look similar to the following:
 [  124.170420] [talos] task loadConfig (1/1):  dQJHkqoTA1/RP/YXS4QgJt/Pr6K7sR4JKQcb71R6cv4=
 [  124.370537] [talos] task loadConfig (1/1):
 [  124.476888] [talos] task loadConfig (1/1): upload configuration using talosctl:
-[  124.658006] [talos] task loadConfig (1/1):  talosctl appy-config --insecure --nodes 192.168.10.101 --file <config.yaml>
+[  124.658006] [talos] task loadConfig (1/1):  talosctl apply-config --insecure --nodes 192.168.10.101 --file <config.yaml>
 [  124.930462] [talos] task loadConfig (1/1): or apply configuration using talosctl interactive installer:
-[  125.167492] [talos] task loadConfig (1/1):  talosctl appy-config --insecure --nodes 192.168.10.101 --interactive
+[  125.167492] [talos] task loadConfig (1/1):  talosctl apply-config --insecure --nodes 192.168.10.101 --interactive
 [  125.425906] [talos] task loadConfig (1/1): optionally with node fingerprint check:
-[  122.613633] [talos] task loadConfig (1/1):  talosctl appy-config --insecure --nodes 192.168.10.101 --cert-fingerprint 'dQJHkqoTA1/RP/YXS4QgJt/Pr6K7sR4JKQcb71R6cv4=' --file <config.yaml>
+[  122.613633] [talos] task loadConfig (1/1):  talosctl apply-config --insecure --nodes 192.168.10.101 --cert-fingerprint 'dQJHkqoTA1/RP/YXS4QgJt/Pr6K7sR4JKQcb71R6cv4=' --file <config.yaml>
 ```
 
-This is the cue to apply the Talos configuration, unfortunatly it can scroll by
+This is the cue to apply the Talos configuration, unfortunately it can scroll by
 pretty quick as more kernel message are output in the wait loop. In any case, I can
 apply the control plane configuration to the node a couple of minutes after booting.
 
@@ -155,7 +155,7 @@ $ talosctl --nodes ${TALOS_CONTROL_PLANE} apply-config --insecure --file control
 ```
 
 That starts the install process on the Talos control plane node, pulling the
-installer container, formatting the disk, and copying the filesystem into place.
+installer container, formatting the disk, and copying the file system into place.
 Once that is complete, Talos enters another wait-loop condition, this time to join
 the `etcd` cluster, which currently does not exist. This is shown in a looped
 message in the kernel logs, something akin to:
@@ -168,7 +168,7 @@ So, with the Talos configuration generated earlier I can bootstrap the Talos con
 plane:
 
 ```shell
-$ talosctl --talosconfig talosconfig --nodes ${TALOS_CONTROL_PLANE} boostrap
+$ talosctl --talosconfig talosconfig --nodes ${TALOS_CONTROL_PLANE} bootstrap
 ```
 And Talos begins to configure the etcd cluster, as well as the static pods that
 function as part of the control plane. Once it is all done, a kernel message is
@@ -195,7 +195,7 @@ by default won't allow regular workload pods to be scheduled on it.
 Adding the remaining nodes to the cluster as workload nodes is very similar to the
 process for the control plane, but instead applying the configuration file of the
 worker node at the configuration prompt of the boot process. Since the workers are
-all cattle, they can be configured at teh same time with the same configuration.
+all cattle, they can be configured at the same time with the same configuration.
 As with the control plane node, the workers get static IP leases from the DHCP
 server.
 
@@ -209,7 +209,7 @@ $ talosctl --nodes ${TALOS_WORKER_01} apply-config --insecure --file worker.yaml
 $ talosctl --nodes ${TALOS_WORKER_02} apply-config --insecure --file worker.yaml
 ```
 
-Once they have gone through the install and boot sequence, they will atuomatically
+Once they have gone through the install and boot sequence, they will automatically
 join the cluster control plane set up earlier. We can check the node status with
 `kubectl`.
 
