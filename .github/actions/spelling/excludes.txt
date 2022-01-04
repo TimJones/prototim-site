@@ -13,8 +13,11 @@ ignore$
 \.mod$
 \.mp[34]$
 \.png$
+\.svg$
 \.wav$
 ^\.git
 docker-compose\.ya?ml$
 ^netlify.toml$
 ^config.yaml$
+(?:^|/)themes/
+(?:^|/)layouts/
