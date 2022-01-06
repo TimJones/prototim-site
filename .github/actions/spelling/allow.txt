@@ -115,3 +115,7 @@ xml
 xmlns
 yaml
 zabbix
+# Annoyingly, excluding matching base64 string doesn't seem to work
+Hkqo
+Qcb
+YXS
