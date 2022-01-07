@@ -8,6 +8,8 @@ jobs:
     name: Update Hugo to latest release
     runs-on: ubuntu-latest
     steps:
+    - name: checkout
+      uses: actions/checkout@v2
     - name: update-hugo-ver-env
       uses: reviewdog/action-depup@v1
       with:
