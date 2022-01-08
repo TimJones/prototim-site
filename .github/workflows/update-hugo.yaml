@@ -11,6 +11,7 @@ jobs:
     - name: checkout
       uses: actions/checkout@v2
     - name: update-hugo-ver-env
+      id: depup
       uses: reviewdog/action-depup@v1
       with:
         file: .env
